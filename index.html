@@ -1,0 +1,242 @@
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабель и электрика для ваших проектов</title>
+    <!-- Подключение Tailwind CSS для быстрой и адаптивной стилизации -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Правило 1: Градиентный заголовок с эффектом прозрачности текста */
+        .gradient-title {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Правило 2: Плавная анимация карточек при наведении */
+        .card-hover {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px -10px rgba(56, 189, 248, 0.25);
+            border-color: rgba(56, 189, 248, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Шапка / Главный экран -->
+    <header class="relative overflow-hidden border-b border-slate-800/80 bg-gradient-to-b from-slate-900 to-slate-950 py-16 lg:py-24">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(56,189,248,0.1),transparent_50%)]"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold uppercase tracking-wider text-sky-400 bg-sky-950/60 border border-sky-800/50 rounded-full">
+                Поставки для бизнеса · Комплектация заявок · Подбор продукции
+            </span>
+            <!-- Правило 1 -->
+            <h1 class="gradient-title text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Кабель и электрика для ваших проектов
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Поставляем кабельную и электротехническую продукцию. Помогаем подобрать позиции по заявке, сравнить доступные варианты и согласовать условия поставки.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5 text-center">
+                    Получить коммерческое предложение
+                </a>
+                <div class="text-slate-400 text-sm sm:text-base font-medium px-4 py-2 bg-slate-900/80 border border-slate-800 rounded-xl">
+                    Отправьте спецификацию — подготовим КП
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- Секция: Что поставляем (Правило 2: Карточки навыков с анимацией) -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">Что поставляем</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Карточка 1 -->
+                <div class="card-hover bg-slate-900/90 border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-6 font-bold text-xl">⚡</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Кабельная продукция</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Кабель и провод для электроснабжения, подключения оборудования и электромонтажных работ. Подбор по марке, сечению, количеству жил и требованиям проекта.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="card-hover bg-slate-900/90 border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 font-bold text-xl">🔌</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Электротехническое оборудование</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Автоматические выключатели, УЗО, контакторы, реле и другие позиции по спецификации. Проверка характеристик и комплектации перед согласованием заказа.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="card-hover bg-slate-900/90 border border-slate-800/80 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 font-bold text-xl">🛠️</div>
+                        <h3 class="text-xl font-bold text-white mb-3">Материалы для электромонтажа</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Кабеленесущие системы, крепёж, соединительные элементы и расходные материалы. Комплектация сопутствующих позиций к основному заказу.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Как мы работаем (Правило 3: Четкая визуальная иерархия с акцентами) -->
+        <section class="bg-slate-900/50 border border-slate-800/60 rounded-3xl p-8 sm:p-12">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">Как мы работаем</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Шаг 1 -->
+                <div class="relative p-6 rounded-2xl bg-slate-900 border border-slate-800">
+                    <span class="text-4xl font-black text-sky-500/20 absolute top-4 right-4">01</span>
+                    <h3 class="text-lg font-bold text-white mb-2 relative z-10">Получаем заявку</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed relative z-10">
+                        Пришлите перечень товаров, количество и желаемые сроки. Если характеристики указаны не полностью, уточним необходимые данные.
+                    </p>
+                </div>
+                <!-- Шаг 2 -->
+                <div class="relative p-6 rounded-2xl bg-slate-900 border border-slate-800">
+                    <span class="text-4xl font-black text-sky-500/20 absolute top-4 right-4">02</span>
+                    <h3 class="text-lg font-bold text-white mb-2 relative z-10">Готовим предложение</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed relative z-10">
+                        Проверяем цены, наличие и сроки у заводов-изготовителей. Аналоги указываем отдельно и согласовываем с вами.
+                    </p>
+                </div>
+                <!-- Шаг 3 -->
+                <div class="relative p-6 rounded-2xl bg-slate-900 border border-slate-800">
+                    <span class="text-4xl font-black text-sky-500/20 absolute top-4 right-4">03</span>
+                    <h3 class="text-lg font-bold text-white mb-2 relative z-10">Подтверждаем заказ</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed relative z-10">
+                        Фиксируем состав поставки. Предлагаем гибкие условия оплаты в зависимости от заказа.
+                    </p>
+                </div>
+                <!-- Шаг 4 -->
+                <div class="relative p-6 rounded-2xl bg-slate-900 border border-slate-800">
+                    <span class="text-4xl font-black text-sky-500/20 absolute top-4 right-4">04</span>
+                    <h3 class="text-lg font-bold text-white mb-2 relative z-10">Организуем поставку</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed relative z-10">
+                        Согласовываем порядок получения товара и сопровождаем выполнение заказа. Работаем 24/7.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Примеры задач (Правило 4: Примеры кейсов в выделенных блоках) -->
+        <section>
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-3">Примеры задач, с которыми к нам обращаются</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Кейс 1 -->
+                <div class="bg-slate-900/80 border-l-4 border-sky-500 border-y border-r border-slate-800 rounded-r-2xl p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                        <span class="w-2.5 h-2.5 rounded-full bg-sky-500 inline-block"></span>
+                        Комплектация по спецификации
+                    </h3>
+                    <p class="text-slate-300 text-sm mb-3"><strong class="text-slate-200">Ситуация:</strong> Нужно закупить кабель, защитную аппаратуру и монтажные материалы для одного объекта.</p>
+                    <p class="text-slate-400 text-sm bg-slate-950/50 p-4 rounded-xl border border-slate-800/50">
+                        <strong class="text-sky-400">Что делаем:</strong> разбираем заявку по позициям, уточняем характеристики и готовим предложение по комплектации.
+                    </p>
+                </div>
+
+                <!-- Кейс 2 -->
+                <div class="bg-slate-900/80 border-l-4 border-indigo-500 border-y border-r border-slate-800 rounded-r-2xl p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                        <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 inline-block"></span>
+                        Поиск альтернативы
+                    </h3>
+                    <p class="text-slate-300 text-sm mb-3"><strong class="text-slate-200">Ситуация:</strong> Нужная позиция отсутствует или не подходит по сроку поставки.</p>
+                    <p class="text-slate-400 text-sm bg-slate-950/50 p-4 rounded-xl border border-slate-800/50">
+                        <strong class="text-indigo-400">Что делаем:</strong> рассматриваем доступные варианты. Технические отличия обозначаем заранее. Замену выполняем после согласования с заказчиком.
+                    </p>
+                </div>
+
+                <!-- Кейс 3 -->
+                <div class="bg-slate-900/80 border-l-4 border-purple-500 border-y border-r border-slate-800 rounded-r-2xl p-6 sm:p-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-3">
+                        <span class="w-2.5 h-2.5 rounded-full bg-purple-500 inline-block"></span>
+                        Повторная закупка
+                    </h3>
+                    <p class="text-slate-300 text-sm mb-3"><strong class="text-slate-200">Ситуация:</strong> Для следующего этапа работ требуется продукция из предыдущего заказа.</p>
+                    <p class="text-slate-400 text-sm bg-slate-950/50 p-4 rounded-xl border border-slate-800/50">
+                        <strong class="text-purple-400">Что делаем:</strong> используем согласованный перечень как основу, уточняем количество и заново проверяем цены и сроки.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция: Направления поставок (Правило 5: Сетка инструментов в виде тегов) -->
+        <section>
+            <div class="text-center mb-8">
+                <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">Направления поставок</h2>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Кабель</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Провод</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Автоматика</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Защита</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Коммутация</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Кабеленесущие системы</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Крепёж</span>
+                <span class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-sm font-medium hover:border-sky-500/50 hover:text-sky-400 transition-colors">Расходные материалы</span>
+            </div>
+        </section>
+
+        <!-- Блок: Что важно при заказе -->
+        <section class="bg-gradient-to-r from-sky-950/40 via-slate-900 to-indigo-950/40 border border-sky-500/20 rounded-3xl p-8 text-center max-w-4xl mx-auto">
+            <h3 class="text-lg font-semibold text-sky-400 mb-2">Что важно при заказе</h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Прозрачный состав предложения. Согласованные характеристики. Отдельное обозначение аналогов. Подтверждение актуальных цен и сроков перед оплатой.
+            </p>
+        </section>
+
+        <!-- Секция: Контакты / CTA (Правило 6: Адаптивность) -->
+        <section id="contact" class="bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-center max-w-3xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Обсудим вашу заявку</h2>
+            <p class="text-slate-400 text-sm sm:text-base mb-8 max-w-lg mx-auto">
+                Пришлите спецификацию или список необходимых материалов. Укажите количество, место поставки и желаемую дату получения.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mb-10">
+                <a href="tel:+79646443077" class="flex items-center gap-3 text-lg font-bold text-white hover:text-sky-400 transition-colors bg-slate-950 px-6 py-3 rounded-xl border border-slate-800">
+                    📞 +7 964 644 3077
+                </a>
+                <a href="mailto:info@well-info.ru" class="flex items-center gap-3 text-lg font-bold text-white hover:text-sky-400 transition-colors bg-slate-950 px-6 py-3 rounded-xl border border-slate-800">
+                    ✉️ info@well-info.ru
+                </a>
+            </div>
+
+            <a href="mailto:info@well-info.ru" class="inline-block w-full sm:w-auto px-8 py-4 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold rounded-xl shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+                Получить коммерческое предложение
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-slate-500 text-sm">
+        <p>© 2026 Все права защищены. Поставки кабеля и электротехники.</p>
+    </footer>
+
+</body>
+</html>
